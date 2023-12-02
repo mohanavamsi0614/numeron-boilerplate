@@ -16,10 +16,9 @@ const countdown = () => {
   }
 };
  const d=setInterval(countdown,700);
-    if (ans==5 || c==5){
-        location.replace("./gameover.html")
-    
-    }
+    // if (ans==5 || c==5){
+    //     location.replace("./gameover.html")
+    // }
 
 let num1=Math.ceil(Math.random()*30)
 let num2=Math.ceil(Math.random()*30)
@@ -37,70 +36,14 @@ function game(i) {
     if(eval(num1+i+num2)){
         ans++
         clearInterval(d)
-
-
         main()
     }
     else{
         location.replace("./gameover.html")
     }
     c++
-
     localStorage.setItem("score",ans)
 }
-// function game1() {
-//     if(num1>num2){
-//         ans++
-//         console.log(ans)
-//         a=localStorage.getItem("score")
-//         a.score=ans++
-//         localStorage.setItem("score",(a))
-//         clearInterval(d)
-
-
-//         main()
-//     }
-//     else{
-//         location.replace("./gameover.html")
-//     }
-//     c++
-
-// }
-// function game2() {
-//     if(num1<num2){
-//         ans++
-  
-//         console.log(ans)
-//         a=localStorage.getItem("score")
-//         a.score=ans++
-//         localStorage.setItem("score",(a))
-//         clearInterval(d)
-//         main()
-//     }
-//     else{
-//         location.replace("./gameover.html")
-//     }
-   
-//     c++
-    
-// }
-// function game3() {
-//     if (num1==num2){
-//         console.log(ans)
-//         a=localStorage.getItem("score")
-//         a.score=ans++
-//         localStorage.setItem("score",(a))
-//         clearInterval(d)
-//         main()
-//     }
-//     else{
-//         location.replace("./gameover.html")
-//     }
- 
-//     c++
-   
-// }
-
 }
 main()
 
