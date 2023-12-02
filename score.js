@@ -1,1 +1,7 @@
-// Iteration 5: Store the player score and display it on the game over screen
+const again=document.getElementById("play-again-button")
+again.addEventListener("click",()=>{
+    location.replace("./game.html")
+})
+const score=document.getElementById("score-board")
+score.innerHTML=localStorage.getItem("score")
+console.log(localStorage.getItem("score"))
