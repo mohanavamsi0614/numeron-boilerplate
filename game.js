@@ -2,24 +2,19 @@
 var ans=0
 var c=0
 var counter=document.getElementById("timer")
-
-
 localStorage.setItem("score",ans)
 function main() {
-    let sec = 5;;
+    let sec = 5
 const countdown = () => {
-  sec--;
+  sec--
   counter.innerHTML = sec;
-
   if (sec <= 0) {
-    location.replace("./gameover.html");
-  }
-};
+    location.replace("./gameover.html")
+  }}
  const d=setInterval(countdown,700);
     // if (ans==5 || c==5){
     //     location.replace("./gameover.html")
     // }
-
 let num1=Math.ceil(Math.random()*30)
 let num2=Math.ceil(Math.random()*30)
 const number1=document.getElementById("number1")
@@ -43,7 +38,5 @@ function game(i) {
     }
     c++
     localStorage.setItem("score",ans)
-}
-}
+}}
 main()
-
