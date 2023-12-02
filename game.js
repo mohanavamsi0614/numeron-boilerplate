@@ -15,8 +15,8 @@ const countdown = () => {
     // if (ans==5 || c==5){
     //     location.replace("./gameover.html")
     // }
-let num1=Math.ceil(Math.random()*30)
-let num2=Math.ceil(Math.random()*30)
+let num1=Math.ceil(Math.random()*100)
+let num2=Math.ceil(Math.random()*100)
 const number1=document.getElementById("number1")
 const number2=document.getElementById("number2")
 number1.innerHTML=num1
