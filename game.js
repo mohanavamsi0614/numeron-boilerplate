@@ -11,7 +11,7 @@ const countdown = () => {
   if (sec <= 0) {
     location.replace("./gameover.html")
   }}
- const d=setInterval(countdown,700);
+ const d=setInterval(countdown,1000);
     // if (ans==5 || c==5){
     //     location.replace("./gameover.html")
     // }
