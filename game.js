@@ -4,7 +4,7 @@ var c=0
 var counter=document.getElementById("timer")
 localStorage.setItem("score",ans)
 function main() {
-    let sec = 5
+    let sec = 6
 const countdown = () => {
   sec--
   counter.innerHTML = sec;
